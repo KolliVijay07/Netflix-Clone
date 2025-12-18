@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Smooch+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 80vh;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/29b665f6-0a62-4745-b9c2-f617fb7eadc6/web/IN-en-20251208-TRIFECTA-perspective_c78aea89-8f13-4e2c-ba7a-f9b40f53bf8c_large.jpg);
+    background-position: center center;
+    /* this is done at center center beacause while making it responsive the image should in center
+    */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: max(1600px, 100vw);
+    /* overflow: hidden; */
+    width: 100%;
+    /* width: 100%; 
+    object-fit: cover7
+    object-position: center; */
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+
+
+    /* here we can use the background-color: black; for the background img 
+    or we can directly use the image and make the other content absolute and make img opacity less */
+    position: absolute;
+    /* position: absolute; is done because to place it on the top of other 
+    absolute is placed relative to nearest anscestor all thr property for absolute are according the nearest anscestor  */
+    top: 0;
+}
+
+nav {
+    display: flex;
+    max-width: 60vw;
+    height: 70px;
+    justify-content: space-between;
+    /* this is place the content at opposite ends */
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    gap: 10px;
+    /* margin: 10px; */
+}
+
+
+nav span {
+    flex-shrink: 0;   /* logo never shrinks */
+}
+
+.b2{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+span {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+nav img {
+    /* color: red;
+    fill: red; */
+    width: 190px;
+    position: relative;
+    z-index: 10;
+    /* padding:10px; */
+}
+
+nav button {
+    position: relative;
+    z-index: 5;
+    width: 100px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    /* gap: 10px; */
+}
+
+
+/* .b1{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+} */
+#lang {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgba(25, 25, 25, 0.526);
+    padding:10px 20px;
+    position: relative;
+    z-index: 5;
+    width: 135px;
+    text-align: center;
+    /* opacity: 0.7; */
+    border-radius: 5px;
+}
+
+.hero {
+    font-family: "Poppins", sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    bottom: 40px;
+    /* z-index: 5; */
+    text-align: center;
+    /* padding: 10px 10px; */
+    gap: 10px;
+}
+
+.hero> :nth-child(1) {
+    /* font-family: "Poppins", sans-serif;     */
+    font-weight: bolder;
+    font-size: 48px;
+    /* padding: 10px 10px; */
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    /* padding: 10px 10px; */
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 0 0;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(62, 62, 62);
+}
+
+/* .b22 {
+    
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    
+    font-weight: 600;
+} */
+input {
+    width: 420px;
+    height: 30px;
+    background-color: rgba(19, 19, 19, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.b22 {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 5px;
+}
+
+/* input {
+    width: 450px;
+    height: 35px;
+    text-align: center;
+    background-color: rgba(19, 19, 19, 0.544);
+    border: 1px solid rgba(255, 255, 255, 0.785);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+} */
+
+.b2:hover {
+    background-color: rgb(190, 20, 20);
+}
+
+.enter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+/* .enter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} */
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    color: white;
+    /* align-items: center; */
+    margin: auto;
+    /* flex-wrap: wrap; */
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    position: relative;
+    z-index: 10;
+    width: 455px;
+}
+
+.secImg video {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    /* width: 25vw;  */
+    width: 375px;
+    overflow: hidden;
+}
+
+.first div>p:nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+    padding: 34px 0;
+}
+
+.first div>p:nth-child(2) {
+    font-size: 24px;
+}
+
+.faq{
+    color: white;
+}
+.faq h2{
+    text-align: center;
+    padding: 34px;
+    font-size: 48px;
+}
+.faqBox{
+    /* font-size: 12px; */
+    transition: all .5s ease-in-out;
+    display: flex;
+    background-color:#2d2d2d;
+    padding: 25px;
+    justify-content: space-between;
+    max-width: 60vw;
+    margin: 10px auto;
+    align-items: center;
+    cursor: pointer;
+}
+.faqBox:hover{
+    background-color: rgba(70, 69, 69, 0.673);
+}
+.faqBox span{
+    font-size: 24px;
+}
+#bb{
+    width: 500px;
+}
+.w{
+    padding:40px 0px 20px;
+    text-align: center;
+    font-size: 1rem;
+    /* margin: auto; */
+    font-weight: 400;
+}
+.faq .enter{
+    padding-bottom: 15px;
+}
+.footer{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    color: white;
+    /* max-width: 60vw; */
+    /* margin: auto; */
+}
+.foot-it{
+    display: flex;
+    flex-direction: column;
+    /* max-width: 100%; */
+    justify-content: start;
+    padding: 10px 60px 10px 0px;
+   margin: 0px 10px 0px 0px;
+}
+
+footer{
+    
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+     /* max-width: 100%; */
+     width: 60vw;
+     justify-content: center;
+     align-items: flex-start;
+     margin: auto;
+     color: white;
+}
+footer span:nth-child(1){
+    /* text-align:; */
+   
+    font-size: 24px;
+    /* box-sizing: border-box; */
+    /* margin: auto 10px; */
+    padding: 20px 0;
+    /* color: white; */
+}
+div a{
+    color: #fffffcd5;
+     font-size: 15px;
+}
+span a{
+    color: blue;
+}
+.a123{
+    font-size:15px;
+    padding: 40px 10px 20px 0px;
+    color: rgba(255, 255, 255, 0.653);
+}
+.a1234{
+    font-size: 12px;
+    padding: 20px 10px 20px 0px;
+    color: rgba(255, 255, 255, 0.444);
+}
+/* this is for laptops with small screen*/
+@media screen and (max-width: 1024px) {
+    nav {
+        max-width: 90vw;
+    }
+    .first {
+        width: 90vw;
+        gap: 30px;
+    }
+    .secImg img {
+        width: 400px;
+    }
+
+    .secImg video {
+        /* width: 30vw; */
+        width: 325px;
+        top: 50px;
+        right: 25px;
+    }
+    .hero> :nth-child(1) {
+        font-size: 40px;
+    }
+}
+/* this is for some tabs and mobile with large screen */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        max-width: 95vw;
+        align-items: center;
+        justify-content: center;
+    }
+    nav img {
+        width: 140px;
+    }
+    .hero {
+        padding: 0 20px;
+        bottom: 0;
+    }
+    .hero > :nth-child(1) {
+        font-size: 32px;
+    }
+    .hero > :nth-child(2),.hero > :nth-child(3) {
+        font-size: 18px;
+    }
+    .enter {
+        /* flex-direction: column; */
+        width: 100%;
+ 
+    }
+    nav .enter{
+        justify-content: flex-end;
+    }
+    input,#bb {
+        width: 80%;
+    }
+    .b22 {
+        width: 30%;
+        height: 55px;
+    }
+    .first {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .secImg img {
+        width: 350px;
+    }
+    .secImg video {
+        width: 80%;
+        top: 45px;
+        /* bottom: -10px; */
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    input{
+        width:50%;
+    }
+}
+
+
+/* this is moblies */
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 10px;
+        /* margin: 100px; */
+        margin: 0 10px;
+    }
+    .b22{
+        font-size: 20px;
+        width: 50%;
+    }
+    input{
+        width: 90%;
+    }
+    /* #lang{
+        width: 90%;
+    } */
+    nav img {
+        width: 80px;
+        /* margin: 100px; */
+        /* justify-content: space-between; */
+    }
+    .enter{
+        flex-direction: column;
+    }
+    nav .enter{
+        flex-direction: row;
+    }
+    #lang {
+        width: 110px;
+        font-size: 14px;
+        padding: 8px;
+    }
+    nav button {
+        font-size: 14px;
+        width: 80px;
+    }
+    .hero > :nth-child(1) {
+        font-size: 26px;
+    }
+    .hero > :nth-child(2),
+    .hero > :nth-child(3) {
+        font-size: 16px;
+    }
+    .faq h2 {
+        font-size: 32px;
+    }
+    .faqBox span {
+        font-size: 18px;
+    }
+    footer {
+        width: 90vw;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+    }
+    footer> span{
+        font-size: 16px;
+    }
+} 
